@@ -379,6 +379,11 @@ public class NotificationCenter {
     public static final int callTabsVisibleToggled = totalEvents++;
     public static final int contactsPermissionBadgeCheck = totalEvents++;
 
+    // ── AI events ────────────────────────────────────────────────────────────
+    public static final int ai_cleanupSuggestionsReady = totalEvents++;
+    public static final int ai_unreadSummaryReady = totalEvents++;
+    public static final int ai_priorityInboxUpdated = totalEvents++;
+
     public static boolean alreadyLogged;
 
     private final SparseArray<ArrayList<NotificationCenterDelegate>> observers = new SparseArray<>();
